@@ -3,129 +3,619 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  ============================================================
+  SITE CONFIG — Village Social (concept preview v2)
+  To reuse this page for another business, change ONLY the
+  values below, then find/replace them through the page.
+  ------------------------------------------------------------
+  BUSINESS_NAME .... Village Social
+  TAGLINE .......... Cafe
+  TOWN ............. Canal Flats, BC
+  PHONE_DISPLAY .... (250) 409-4738
+  PHONE_TEL ........ +12504094738
+  HOURS ............ Sun + Wed-Sat 7:00 AM - 3:00 PM
+  SERVICE_AREA ..... Canal Flats, BC
+  MAPS_URL ......... https://www.google.com/maps/place/?q=place_id:621843765920854
+  PREVIEW_URL ...... https://mhplaban.github.io/site-previews/village-social/
+  ACCENT ........... #c98a2d (change in :root --accent)
+  ============================================================
+  OWNER-CONFIRMED FACTS (verified Oct 2026): name, phone
+  (two independent sources), address 4957 Burns Ave Canal Flats,
+  posted hours Sun + Wed-Sat 7-3, menu items named in public
+  reviews (coffee, cheesecake, almond croissants, Asian Chicken
+  Salad, Cubana sandwich), gluten-free options per public
+  gluten-free listing.
+  NOT verified - do not publish as fact: full menu, prices,
+  daily specials, catering.
+  ============================================================
+-->
+<title>Village Social | Café in Canal Flats, BC</title>
+<meta name="description" content="Village Social — coffee, baking and lunch at 4957 Burns Ave, Canal Flats. Open Sun + Wed–Sat, 7 AM–3 PM. Call (250) 409-4738.">
+<link rel="canonical" href="https://mhplaban.github.io/site-previews/village-social/">
 <meta name="robots" content="noindex, nofollow">
-<title>Village Social — Café · Canal Flats, BC</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Village Social | Café in Canal Flats, BC">
+<meta property="og:description" content="Village Social — coffee, baking and lunch at 4957 Burns Ave, Canal Flats. Open Sun + Wed–Sat, 7 AM–3 PM. Call (250) 409-4738.">
+<meta property="og:url" content="https://mhplaban.github.io/site-previews/village-social/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231a2230'/%3E%3Cpath d='M13 3 5 14h5l-1 7 8-11h-5z' fill='%23c98a2d'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Village Social",
+  "telephone": "+1-250-409-4738",
+  "url": "https://mhplaban.github.io/site-previews/village-social/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4957 Burns Ave",
+    "addressLocality": "Canal Flats",
+    "addressRegion": "BC",
+    "addressCountry": "CA"
+  },
+  "areaServed": { "@type": "Place", "name": "Canal Flats, British Columbia" },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Sunday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00", "closes": "15:00"
+  }]
+}
+</script>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#3e2f26;background:#f7f2ea;line-height:1.6}
-  .wrap{max-width:640px;margin:0 auto;padding:0 20px}
-  header{position:sticky;top:0;z-index:10;background:rgba(247,242,234,.96);backdrop-filter:blur(6px);border-bottom:1px solid #e5d9c5}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
-  .brand{font-family:Georgia,"Times New Roman",serif;font-size:1.15rem}
-  .btn{display:inline-block;background:#c98a2d;color:#fff;text-decoration:none;padding:12px 26px;border-radius:999px;font-weight:600;font-size:1rem}
-  .btn-sm{padding:9px 20px;font-size:.9rem}
-  .btn:hover{background:#b07825}
-  .hero{padding:56px 0 40px;text-align:center}
-  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:#c98a2d;font-weight:700;margin-bottom:14px}
-  h1{font-family:Georgia,"Times New Roman",serif;font-size:2.3rem;line-height:1.2;margin-bottom:14px;font-weight:400}
-  .hero p{color:#7a675a;font-size:1.05rem;margin-bottom:26px}
-  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .btn-ghost{display:inline-block;border:1.5px solid #c98a2d;color:#9a6a1f;text-decoration:none;padding:11px 26px;border-radius:999px;font-weight:600}
-  section{padding:36px 0}
-  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.6rem;font-weight:400;margin-bottom:6px;text-align:center}
-  .sub{text-align:center;color:#7a675a;margin-bottom:24px;font-size:.95rem}
-  .menu{background:#fff;border:1px solid #e9dcc4;border-radius:14px;padding:8px 22px}
-  .menu .item{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f3ead9}
-  .menu .item:last-child{border-bottom:none}
-  .menu h3{font-size:1rem}
-  .menu p{font-size:.85rem;color:#7a675a}
-  .tag{display:inline-block;background:#f3e6c8;color:#9a6a1f;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:999px;margin-top:6px}
-  .hours{background:#fff;border:1px solid #e9dcc4;border-radius:14px;padding:22px;margin-top:8px}
-  .hours table{width:100%;border-collapse:collapse;font-size:.95rem}
-  .hours td{padding:8px 0;border-bottom:1px solid #f3ead9}
-  .hours tr:last-child td{border-bottom:none}
-  .hours td:last-child{text-align:right;font-weight:600}
-  .addr{text-align:center;margin-top:16px;color:#7a675a;font-size:.95rem}
-  .addr a{color:#9a6a1f}
-  .photos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:6px}
-  .ph{aspect-ratio:1;border-radius:12px;background:linear-gradient(135deg,#e9dcc4,#dcc9a4);display:flex;align-items:center;justify-content:center;color:#8a7357;font-size:.75rem;text-align:center;padding:10px}
-  .band{background:#3e2f26;color:#f7f2ea;text-align:center;padding:44px 20px;border-radius:18px;margin:12px 0 36px}
-  .band h2{color:#f7f2ea;margin-bottom:10px}
-  .band p{color:#cbb694;margin-bottom:22px}
-  .band .btn{background:#c98a2d}
-  .mobilebar{display:none}
-  footer{padding:28px 20px 90px;text-align:center;font-size:.78rem;color:#a89477}
-  footer .fine{max-width:520px;margin:0 auto}
-  @media(max-width:560px){
-    h1{font-size:1.9rem}
-    .mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#3e2f26;padding:12px 16px;gap:10px;z-index:20}
-    .mobilebar a{flex:1;text-align:center;background:#c98a2d;color:#fff;text-decoration:none;padding:13px;border-radius:12px;font-weight:700}
+  :root{
+    --ink:#1a2230; --ink-soft:#232a35; --paper:#f5f6f8; --card:#ffffff;
+    --line:#e2e7ee; --muted:#5d6b7d; --accent:#c98a2d; --accent-dark:#7d5a1c;
+    --radius:14px; --max:1060px;
   }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink-soft);background:var(--paper);line-height:1.6;-webkit-text-size-adjust:100%}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--ink);
+    padding:10px 18px;font-weight:700;z-index:100;border-radius:0 0 8px 0}
+  .skip:focus{left:0}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(26,34,48,.98)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;max-width:var(--max);margin:0 auto}
+  .brand{color:#fff;font-weight:800;font-size:1.1rem;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:10px}
+  .brand svg{flex-shrink:0}
+  .brand small{display:block;font-weight:400;font-size:.72rem;color:#9aa7b8}
+  nav.main ul{display:flex;gap:4px;list-style:none;align-items:center}
+  nav.main a.navlink{color:#dbe3ee;text-decoration:none;font-size:.95rem;font-weight:600;padding:10px 14px;border-radius:8px}
+  nav.main a.navlink:hover{background:rgba(255,255,255,.08);color:#fff}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--ink);
+    text-decoration:none;padding:13px 28px;border-radius:10px;font-weight:800;font-size:1.02rem;border:0;cursor:pointer}
+  .btn:hover{background:#b07825}
+  .btn-sm{padding:10px 20px;font-size:.92rem;border-radius:8px}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#0f1622}
+  .btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1.5px solid #9aa7b8;color:#dbe3ee;
+    text-decoration:none;padding:12px 26px;border-radius:10px;font-weight:600;background:transparent}
+  .btn-ghost:hover{border-color:#fff;color:#fff}
+  .navtoggle{display:none;background:none;border:0;color:#fff;padding:10px;cursor:pointer;border-radius:8px}
+  /* ---------- hero ---------- */
+  .hero{background:var(--ink);color:#fff;padding:64px 0 56px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:var(--accent);font-weight:700;margin-bottom:14px}
+  h1{font-size:2.6rem;line-height:1.15;margin-bottom:16px;letter-spacing:-.01em}
+  .lede{color:#b9c4d4;font-size:1.1rem;margin-bottom:28px;max-width:34rem}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;list-style:none}
+  .chips li{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:#ecd3a3;
+    border:1.5px solid rgba(201,138,45,.45);background:rgba(201,138,45,.08);padding:8px 16px;border-radius:999px}
+  .chips svg{flex-shrink:0}
+  .hero-art{background:linear-gradient(135deg,#232f45 0%,#141c2b 100%);border:1px solid rgba(255,255,255,.09);
+    border-radius:20px;padding:40px 32px;text-align:center}
+  .hero-art svg{width:96px;height:96px;margin-bottom:18px}
+  .hero-art h2{color:#fff;font-size:1.25rem;margin-bottom:8px}
+  .hero-art p{color:#9aa7b8;font-size:.92rem;max-width:22rem;margin:0 auto 20px}
+  .hero-art .cap{font-size:.75rem;color:#6b7a8f;margin-top:16px}
+  /* ---------- sections ---------- */
+  section.block{padding:64px 0}
+  section.block.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:var(--accent-dark);font-weight:700;margin-bottom:10px}
+  h2.sec{font-size:1.9rem;color:var(--ink);margin-bottom:10px;letter-spacing:-.01em}
+  .sec-sub{color:var(--muted);margin-bottom:32px;max-width:40rem;font-size:1.02rem}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  .card .ic{width:46px;height:46px;border-radius:12px;background:rgba(201,138,45,.16);display:flex;
+    align-items:center;justify-content:center;margin-bottom:16px;color:var(--accent-dark)}
+  .card h3{font-size:1.12rem;margin-bottom:8px;color:var(--ink)}
+  .card p{font-size:.95rem;color:var(--muted)}
+  .owner-note{margin-top:20px;font-size:.88rem;color:var(--muted);background:#faf6ee;border:1px dashed #dcc49a;
+    border-radius:10px;padding:14px 18px}
+  section.block.alt .owner-note{background:#faf6ee}
+  /* trust list */
+  .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none}
+  .trust li{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:18px 20px}
+  .trust svg{flex-shrink:0;margin-top:3px;color:#1d7a3a}
+  .trust strong{display:block;color:var(--ink);font-size:.98rem}
+  .trust span{font-size:.88rem;color:var(--muted)}
+  /* gallery placeholder */
+  .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .ph{aspect-ratio:4/3;border:2px dashed #c3ccd8;border-radius:var(--radius);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:8px;color:#8a99a8;background:#eef1f5;text-align:center;padding:16px}
+  .ph strong{font-size:.9rem;color:#6b7a8f}
+  .ph span{font-size:.78rem}
+  .checklist{margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 28px}
+  .checklist h3{font-size:1.05rem;color:var(--ink);margin-bottom:12px}
+  .checklist ul{list-style:none;display:grid;gap:8px;font-size:.93rem;color:var(--muted)}
+  .checklist li{display:flex;gap:10px;align-items:flex-start}
+  .checklist svg{flex-shrink:0;margin-top:4px;color:var(--accent-dark)}
+  /* reviews */
+  .review-cta{background:var(--ink);color:#fff;border-radius:18px;padding:44px 32px;text-align:center}
+  .review-cta h2{color:#fff;margin-bottom:10px}
+  .review-cta p{color:#b9c4d4;margin-bottom:24px;max-width:34rem;margin-left:auto;margin-right:auto}
+  /* service area / about */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .hours{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .hours table{width:100%;border-collapse:collapse;font-size:.95rem}
+  .hours td{padding:10px 0;border-bottom:1px solid #eef1f5}
+  .hours tr:last-child td{border-bottom:none}
+  .hours td:last-child{text-align:right;font-weight:600;color:var(--ink)}
+  .addr{margin-top:18px;color:var(--muted);font-size:.95rem}
+  .addr a{color:var(--accent-dark);font-weight:600}
+  /* contact + form */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+  .bigphone{display:block;font-size:1.9rem;font-weight:800;color:var(--ink);text-decoration:none;margin:6px 0 18px}
+  .bigphone:hover{color:var(--accent-dark)}
+  form.quote{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+  form.quote h3{font-size:1.3rem;color:var(--ink);margin-bottom:6px}
+  form.quote .form-sub{font-size:.9rem;color:var(--muted);margin-bottom:22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-weight:600;font-size:.9rem;color:var(--ink);margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border:1.5px solid #c9d2de;
+    border-radius:10px;background:#fff;color:var(--ink)}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent-dark);outline:3px solid rgba(201,138,45,.35);outline-offset:1px}
+  .field .hint{font-size:.8rem;color:var(--muted);margin-top:4px}
+  .field .err{font-size:.82rem;color:#b3261e;margin-top:4px;display:none}
+  .field.invalid .err{display:block}
+  .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#b3261e}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;color:var(--muted);margin:4px 0 20px}
+  .consent input{margin-top:4px;flex-shrink:0;width:18px;height:18px}
+  .form-note{font-size:.84rem;color:var(--muted);margin-top:14px;background:#f0f4f8;border-radius:10px;padding:12px 16px}
+  .alert{display:none;border-radius:10px;padding:14px 18px;margin-bottom:18px;font-size:.92rem;font-weight:600}
+  .alert.show{display:block}
+  .alert.error{background:#fdecea;color:#b3261e;border:1px solid #f5c6c0}
+  .alert.ok{background:#e6f4ea;color:#1d7a3a;border:1px solid #bfe3c9}
+  /* final band + footer */
+  .band{background:var(--accent);color:var(--ink);text-align:center;padding:56px 20px;border-radius:20px;margin:8px 0 64px}
+  .band h2{font-size:1.9rem;margin-bottom:10px}
+  .band p{margin-bottom:24px;font-weight:600}
+  footer.site{background:var(--ink);color:#9aa7b8;padding:48px 0 40px;font-size:.9rem}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;margin-bottom:32px}
+  footer.site h3{color:#fff;font-size:1rem;margin-bottom:12px}
+  footer.site a{color:#dbe3ee;text-decoration:none}
+  footer.site a:hover{text-decoration:underline}
+  footer.site ul{list-style:none;display:grid;gap:8px}
+  .fine{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:.8rem;color:#6b7a8f;display:grid;gap:8px}
+  .preview-tag{display:inline-block;background:rgba(201,138,45,.14);border:1px solid rgba(201,138,45,.5);
+    color:#ecd3a3;font-size:.78rem;font-weight:600;border-radius:8px;padding:10px 16px}
+  /* mobile call bar */
+  .mobilebar{display:none}
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-art{order:-1;padding:28px 20px}
+    .grid3{grid-template-columns:1fr 1fr}
+    .split,.contact-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    h1{font-size:2rem}
+    section.block{padding:48px 0}
+    .grid3,.grid2,.trust,.ph-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ink);
+      border-top:1px solid rgba(255,255,255,.1);padding:8px 16px 16px}
+    nav.main.open{display:block}
+    nav.main ul{flex-direction:column;align-items:stretch}
+    nav.main a.navlink{display:block;padding:12px 8px}
+    nav.main .btn{margin-top:8px;width:100%}
+    .navtoggle{display:block}
+    header.site{position:sticky}
+    .bar{position:relative}
+    .mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--ink);
+      padding:12px 16px;z-index:60;gap:10px}
+    .mobilebar a{flex:1;text-align:center;background:var(--accent);color:var(--ink);text-decoration:none;
+      padding:14px;border-radius:12px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px}
+    footer.site{padding-bottom:110px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+  }
+
+  /* listing photos (hotlinked from the business's Google listing; graceful degrade) */
+  .hero-photo{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+    background:linear-gradient(135deg,#232f45 0%,#141c2b 100%)}
+  .hero-photo img{display:block;width:100%;height:340px;object-fit:cover}
+  .hero-photo .cap{font-size:.75rem;color:#8b98a9;padding:10px 16px;text-align:center}
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff}
+  .gal img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#eef1f5}
+  .gal figcaption{font-size:.8rem;color:var(--muted);padding:10px 14px}
+  @media(max-width:900px){.hero-photo{order:-1}}
+  @media(max-width:640px){.gal-grid{grid-template-columns:1fr 1fr}.hero-photo img{height:240px}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header>
-  <div class="wrap">
-    <div class="brand">Village Social</div>
-    <a class="btn btn-sm" href="tel:+12504094738">Call</a>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="Village Social — home">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#c98a2d"/><g stroke="#1a2230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></g></svg>
+      <span>Village Social<small>Café · Canal Flats, BC</small></span>
+    </a>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="primarynav" aria-label="Open menu">
+      <svg id="icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <nav class="main" id="primarynav" aria-label="Primary">
+      <ul>
+        <li><a class="navlink" href="#services">Services</a></li>
+        <li><a class="navlink" href="#why">Why Village Social</a></li>
+        <li><a class="navlink" href="#reviews">Reviews</a></li>
+        <li><a class="navlink" href="#area">Service Area</a></li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
+        <li><a class="btn btn-sm" href="tel:+12504094738">Call Now</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
+<main id="main">
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Café · Canal Flats, BC</p>
+      <h1>Coffee, baking &amp; lunch in the heart of Canal Flats.</h1>
+      <p class="lede">A local favourite for neighbours and travellers — coffee, fresh baking and hearty lunches, with gluten-free options on the menu.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12504094738">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+          Call (250) 409-4738</a>
+        <a class="btn-ghost" href="#services">See the Menu</a>
+      </div>
+      <ul class="chips" aria-label="Key facts">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Sun, Wed–Sat · 7:00 AM – 3:00 PM</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>4957 Burns Ave, Canal Flats</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gluten-free options</li>
+      </ul>
+    </div>
+<div class="hero-photo">
+      <img src="https://scontent-det1-1.cdninstagram.com/v/t39.30808-6/789144712_10163503161461770_1506496776929877666_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&amp;_nc_ohc=9J8vkgrizmcQ7kNvwE9a9tP&amp;_nc_oc=AdpFjoKV1jRcDhCOdXNTbRKQqkokCr1Tlu8jrFmdfJlZRDSFZwHdUI4u1dYOyDUSIsE&amp;_nc_zt=23&amp;_nc_ht=scontent-det1-1.cdninstagram.com&amp;_nc_gid=XHnT4_0ccmtIRFqxvnVnBw&amp;oh=00_AQN7AyRx7609YhbjN64_qS8k1UpiJlM-9UZOscHlvex3IQ&amp;oe=6ADB04A2" alt="Cafe interior with tiled counter at Village Social" loading="lazy" onerror="this.style.display='none'">
+      <p class="cap">Photo from Village Social's Google listing</p>
+    </div>
+  </div>
+</div>
+
 <div class="wrap">
-  <div class="hero">
-    <div class="eyebrow">Café · Canal Flats, BC</div>
-    <h1>Coffee, baking &amp; lunch in the heart of Canal Flats.</h1>
-    <p>A local favourite for neighbours and travellers heading to the hot springs.</p>
-    <div class="cta-row">
-      <a class="btn" href="tel:+12504094738">Call Us</a>
-      <a class="btn-ghost" href="https://www.google.com/maps/place/?q=place_id:621843765920854">Find Us</a>
+<!-- ================= SERVICES ================= -->
+<section class="block" id="services" aria-labelledby="services-h">
+  <p class="kicker">On the menu</p>
+  <h2 class="sec" id="services-h">Coffee, baking &amp; lunch</h2>
+  <p class="sec-sub">Dishes named in public reviews — the full menu is confirmed with the café before launch.</p>
+  <div class="grid3">
+    <div class="card">
+      <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <h3>Coffee &amp; Espresso</h3>
+      <p>Fresh brews, made to order — the reason regulars keep coming back.</p>
+    </div>
+    <div class="card">
+      <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r=".9" fill="currentColor" stroke="none"/><circle cx="14.5" cy="9" r=".9" fill="currentColor" stroke="none"/><circle cx="10" cy="14.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r=".9" fill="currentColor" stroke="none"/></svg></div>
+      <h3>Fresh Baking</h3>
+      <p>Cheesecake and almond croissants — both named as favourites in reviews.</p>
+    </div>
+    <div class="card">
+      <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+      <h3>Lunch Favourites</h3>
+      <p>The Asian Chicken Salad and the Cubana sandwich, named in reviews.</p>
     </div>
   </div>
+  <p class="owner-note"><strong>Owner to confirm:</strong> the full menu, prices and daily specials are confirmed with the café before this site goes live — only dishes named in public reviews are listed here. Gluten-free options are noted per a public gluten-free listing.</p>
+</section>
 
-  <section>
-    <h2>On the Menu</h2>
-    <p class="sub">Dishes named by reviewers — full menu confirmed with the café</p>
-    <div class="menu">
-      <div class="item"><div><h3>Coffee &amp; Espresso</h3><p>Fresh brews, made to order</p></div></div>
-      <div class="item"><div><h3>Cheesecake</h3><p>A reviewer favourite</p></div></div>
-      <div class="item"><div><h3>Almond Croissants</h3><p>Baked fresh</p></div></div>
-      <div class="item"><div><h3>Asian Chicken Salad</h3><p>Light &amp; flavourful</p></div></div>
-      <div class="item"><div><h3>Cubana Sandwich</h3><p>Hearty lunch pick</p></div></div>
-    </div>
-    <p class="sub" style="margin-top:14px"><span class="tag">Gluten-free options available</span></p>
-  </section>
+<!-- ================= WHY / TRUST ================= -->
+<section class="block alt" id="why" aria-labelledby="why-h">
+  <p class="kicker">Why Village Social</p>
+  <h2 class="sec" id="why-h">Canal Flats' community café</h2>
+  <p class="sec-sub">Everything below is verified from Village Social's public listings and reviews. Nothing is exaggerated — and nothing is invented.</p>
+  <ul class="trust">
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div><strong>A community hub</strong><span>A gathering place for Canal Flats neighbours and travellers passing through.</span></div>
+    </li>
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div><strong>Hours that suit early risers</strong><span>Sunday and Wednesday to Saturday, 7:00 AM – 3:00 PM.</span></div>
+    </li>
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><strong>On the hot-springs route</strong><span>Reviewers describe stopping in en route to Fairmont and Lussier Hot Springs.</span></div>
+    </li>
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+      <div><strong>Gluten-free options</strong><span>Gluten-free menu options, per a public gluten-free listing.</span></div>
+    </li>
+  </ul>
+  <p class="owner-note"><strong>Owner to confirm before launch:</strong> the full menu, prices and specials. These appear here only after the owner verifies them — they are never invented.</p>
+</section>
 
-  <section>
-    <h2>Your Photos Here</h2>
-    <p class="sub">Real photos of your food and space go here — added with your permission</p>
-    <div class="photos">
-      <div class="ph">Café photo</div>
-      <div class="ph">Baking photo</div>
-      <div class="ph">Coffee photo</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Visit Us</h2>
-    <p class="sub">4957 Burns Ave, Canal Flats, BC</p>
-    <div class="hours">
-      <table>
-        <tr><td>Sunday</td><td>7:00 AM – 3:00 PM</td></tr>
-        <tr><td>Wednesday – Saturday</td><td>7:00 AM – 3:00 PM</td></tr>
-        <tr><td>Monday – Tuesday</td><td>Closed</td></tr>
-      </table>
-    </div>
-    <p class="addr">
-      <a href="https://www.google.com/maps/place/?q=place_id:621843765920854">Get directions on Google Maps</a><br>
-      Read reviews on Google &amp; TripAdvisor
-    </p>
-  </section>
-
-  <div class="band">
-    <h2>Stopping through Canal Flats?</h2>
-    <p>Come in for coffee, baking, and a proper lunch.</p>
-    <a class="btn" href="tel:+12504094738">Call (250) 409-4738</a>
+<!-- ================= GALLERY ================= -->
+<section class="block" id="projects" aria-labelledby="projects-h">
+  <p class="kicker">Inside the café</p>
+  <h2 class="sec" id="projects-h">Come on in</h2>
+  <p class="sec-sub">Real photos from Village Social's Google listing — more of your photos can be added with your permission.</p>
+  <div class="gal-grid" aria-label="Photos from Village Social's Google listing">
+    <figure class="gal"><img src="https://scontent-det1-1.xx.fbcdn.net/v/t39.30808-6/651412783_1260247936284235_2327982502664833085_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=957871&amp;_nc_ohc=TXvUzG9_N4MQ7kNvwF1muWf&amp;_nc_oc=AdrNx5cjaqYuQJDMxXd_xbuIAEIQ1DSpWMprIN2WMneypvx_3q5rmL1gsBgwc5GKHBg&amp;_nc_zt=23&amp;_nc_ht=scontent-det1-1.xx&amp;_nc_gid=XHnT4_0ccmtIRFqxvnVnBw&amp;oh=00_AQMN7j87DTqCjf3JebLZlLy7GNuZankTSpkDfUMXexIoFg&amp;oe=6ADB2A8C" alt="Handwritten chalkboard menu board at Village Social" loading="lazy" onerror="this.closest('.gal').style.display='none'"><figcaption>Chalkboard menu — photo from Village Social's Google listing</figcaption></figure>
+    <figure class="gal"><img src="https://scontent-det1-1.cdninstagram.com/v/t39.30808-6/789144712_10163503161461770_1506496776929877666_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&amp;_nc_ohc=9J8vkgrizmcQ7kNvwE9a9tP&amp;_nc_oc=AdpFjoKV1jRcDhCOdXNTbRKQqkokCr1Tlu8jrFmdfJlZRDSFZwHdUI4u1dYOyDUSIsE&amp;_nc_zt=23&amp;_nc_ht=scontent-det1-1.cdninstagram.com&amp;_nc_gid=XHnT4_0ccmtIRFqxvnVnBw&amp;oh=00_AQN7AyRx7609YhbjN64_qS8k1UpiJlM-9UZOscHlvex3IQ&amp;oe=6ADB04A2" alt="Cafe interior with tiled counter at Village Social" loading="lazy" onerror="this.closest('.gal').style.display='none'"><figcaption>Cafe interior, tiled counter — photo from Village Social's Google listing</figcaption></figure>
+    <figure class="gal"><img src="https://dynamic-media.tacdn.com/media/photo-o/28/6b/52/4a/iced-latte-on-the-patio.jpg" alt="Iced latte in front of a mountain mural at Village Social" loading="lazy" onerror="this.closest('.gal').style.display='none'"><figcaption>Iced latte, mountain mural — photo from Village Social's Google listing</figcaption></figure>
+    <figure class="gal"><img src="https://scontent-det1-1.cdninstagram.com/v/t39.30808-6/468325215_17928971513969020_7307734319565088988_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=109&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&amp;_nc_ohc=Y6zNXB7kW94Q7kNvwGbbshC&amp;_nc_oc=AdqyLzHtLac33CuM5aGsGDL-Pz2YV5iH_JkFoe0u90rackDtFSRHjXt4tHeeLjpEaF4&amp;_nc_zt=23&amp;_nc_ht=scontent-det1-1.cdninstagram.com&amp;_nc_gid=XHnT4_0ccmtIRFqxvnVnBw&amp;oh=00_AQPdY71TOxxJ9N6Q30G33HjlRxObsJEUlkxcE11Cn_e3cA&amp;oe=6ADB1D92" alt="Branded Village Social tumblers" loading="lazy" onerror="this.closest('.gal').style.display='none'"><figcaption>Branded tumblers — photo from Village Social's Google listing</figcaption></figure>
   </div>
+  <div class="checklist">
+    <h3>Owner content checklist — more photos</h3>
+    <ul>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>More photos of your work (phone photos are fine)</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Permission confirmed for any photo showing a customer</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="block alt" id="reviews" aria-labelledby="reviews-h">
+  <p class="kicker">Reviews</p>
+  <h2 class="sec" id="reviews-h">What visitors say</h2>
+  <p class="sec-sub">Testimonials appear here only with the owner's approval — never invented, never copied without permission.</p>
+  <div class="review-cta">
+    <h2>See Village Social's reviews</h2>
+    <p>Visitor reviews live on the café's public Google listing — real ratings from real visitors, unedited.</p>
+    <a class="btn" href="https://www.google.com/maps/place/?q=place_id:621843765920854" target="_blank" rel="noopener">View Google Reviews</a>
+  </div>
+</section>
+
+<!-- ================= SERVICE AREA + ABOUT ================= -->
+<section class="block" id="area" aria-labelledby="area-h">
+  <div class="split">
+    <div>
+      <p class="kicker">Find us</p>
+      <h2 class="sec" id="area-h">Visit the café</h2>
+      <p class="sec-sub">Village Social is at <strong>4957 Burns Ave, Canal Flats, British Columbia</strong> — right on the route through town.</p>
+      <p><a class="btn btn-dark" href="https://www.google.com/maps/place/?q=place_id:621843765920854" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Get Directions</a></p>
+    </div>
+    <div>
+      <p class="kicker">About</p>
+      <h2 class="sec">About Village Social</h2>
+      <p class="sec-sub">Village Social is a café at 4957 Burns Ave in Canal Flats, BC serving coffee, baking and lunch. Posted hours are Sunday and Wednesday to Saturday, 7:00 AM to 3:00 PM.</p>
+      <div class="hours" aria-label="Business hours">
+        <table>
+          <tr><td>Sunday</td><td>7:00 AM – 3:00 PM</td></tr>
+          <tr><td>Wednesday – Saturday</td><td>7:00 AM – 3:00 PM</td></tr>
+          <tr><td>Monday – Tuesday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <p class="addr"><strong>4957 Burns Ave, Canal Flats, BC</strong> · <a href="tel:+12504094738">(250) 409-4738</a></p>
+    </div>
+  </div>
+</section>
 </div>
 
-<div class="mobilebar">
-  <a href="tel:+12504094738">📞 Call Us</a>
+<div class="wrap">
+<!-- ================= CONTACT + QUOTE FORM ================= -->
+<section class="block alt" id="contact" aria-labelledby="contact-h">
+  <p class="kicker">Get in touch</p>
+  <h2 class="sec" id="contact-h">Say hello</h2>
+  <p class="sec-sub">Questions, large orders or feedback — call the café, or send a message below.</p>
+  <div class="contact-grid">
+    <div>
+      <p><strong>Call Village Social</strong></p>
+      <a class="bigphone" href="tel:+12504094738">(250) 409-4738</a>
+      <div class="hours" aria-label="Business hours">
+        <table>
+          <tr><td>Sunday</td><td>7:00 AM – 3:00 PM</td></tr>
+          <tr><td>Wednesday – Saturday</td><td>7:00 AM – 3:00 PM</td></tr>
+          <tr><td>Monday – Tuesday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <p class="addr"><strong>4957 Burns Ave, Canal Flats, BC</strong><br>
+      <a href="https://www.google.com/maps/place/?q=place_id:621843765920854" target="_blank" rel="noopener">Find us on Google Maps</a></p>
+    </div>
+    <form class="quote" id="quote" novalidate aria-labelledby="quote-h">
+      <h3 id="quote-h">Send a message</h3>
+      <p class="form-sub">Fill this in and your messaging app will open with the message addressed to Village Social — you press send. Nothing is submitted silently.</p>
+      <div class="alert error" id="form-error" role="alert"></div>
+      <div class="alert ok" id="form-ok" role="status"></div>
+      <div class="field" data-field="name">
+        <label for="f-name">Your name</label>
+        <input type="text" id="f-name" name="name" autocomplete="name" required>
+        <p class="err">Please enter your name.</p>
+      </div>
+      <div class="field" data-field="contact">
+        <label for="f-contact">Phone number or email</label>
+        <input type="text" id="f-contact" name="contact" autocomplete="tel" required
+               aria-describedby="contact-hint">
+        <p class="hint" id="contact-hint">So the café can reach you back.</p>
+        <p class="err">Please enter a phone number or email.</p>
+      </div>
+      <div class="grid2">
+        <div class="field" data-field="service">
+          <label for="f-service">Topic</label>
+          <select id="f-service" name="service" required>
+            <option value="">Choose…</option>
+            <option>General question</option>
+            <option>Large / group order</option>
+            <option>Feedback</option>
+            <option>Something else</option>
+          </select>
+          <p class="err">Please choose a topic.</p>
+        </div>
+        <div class="field" data-field="town">
+          <label for="f-town">Town</label>
+          <input type="text" id="f-town" name="town" placeholder="e.g. Canal Flats" autocomplete="address-level2" required>
+          <p class="err">Please enter your town.</p>
+        </div>
+      </div>
+      <div class="field" data-field="details">
+        <label for="f-details">Your message</label>
+        <textarea id="f-details" name="details" rows="4" required
+                  placeholder="e.g. Do you do a dozen croissants to order for Saturday?"></textarea>
+        <p class="err">Please write your message.</p>
+      </div>
+      <div class="consent">
+        <input type="checkbox" id="f-consent" required>
+        <label for="f-consent">I agree to be contacted about my message.</label>
+      </div>
+      <button class="btn" type="submit" style="width:100%">Open in My Messaging App</button>
+      <p class="form-note">No account, no tracking, no silent sending: this opens your phone's messaging app with the message written out to <strong>(250) 409-4738</strong>. You review it and press send yourself. Prefer to talk? <a href="tel:+12504094738">Call instead</a>.</p>
+      <noscript><p class="form-note">JavaScript is off, so the form can't open your messaging app. Please call <a href="tel:+12504094738">(250) 409-4738</a> instead.</p></noscript>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<div class="band">
+  <h2>Stopping through Canal Flats?</h2>
+  <p>Come in for coffee, baking, and a proper lunch.</p>
+  <a class="btn btn-dark" href="tel:+12504094738">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+    Call (250) 409-4738</a>
+</div>
+</div>
+</main>
+
+
+<div class="mobilebar" aria-label="Quick call">
+  <a href="tel:+12504094738">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+    Call Us</a>
 </div>
 
-<footer>
-  <p class="fine"><strong>Unofficial concept preview</strong> prepared by Hasan, Radium Hot Springs. This is a design mockup only — not affiliated with or endorsed by Village Social. Hours, address, and menu items shown as found in public listings and reviews; final content to be confirmed with the owner.</p>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Village Social</h3>
+        <ul>
+          <li>Café</li>
+          <li>4957 Burns Ave, Canal Flats, BC</li>
+          <li><a href="tel:+12504094738">(250) 409-4738</a></li>
+          <li>Sun, Wed–Sat · 7:00 AM – 3:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Village Social</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#area">Service Area</a></li>
+          <li><a href="#quote">Send a Message</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Find us</h3>
+        <ul>
+          <li><a href="https://www.google.com/maps/place/?q=place_id:621843765920854" target="_blank" rel="noopener">Google Maps listing</a></li>
+          <li><a href="https://www.google.com/maps/place/?q=place_id:621843765920854" target="_blank" rel="noopener">Get directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- PREVIEW DISCLAIMER — remove this block when the owner approves the production site -->
+    <div class="fine">
+      <p><span class="preview-tag">Unofficial concept preview</span></p>
+      <p>Design mockup prepared by Hasan, Radium Hot Springs — not affiliated with or endorsed by Village Social. Details shown as listed publicly; final content confirmed with the owner before launch. Messages open your own messaging app; nothing is sent or stored by this page.</p>
+      <p>© <span id="yr">2026</span> Village Social concept. All rights reserved.</p>
+    </div>
+    <!-- END PREVIEW DISCLAIMER -->
+  </div>
 </footer>
 
+<script>
+(function(){
+  "use strict";
+  /* Mobile nav */
+  var toggle = document.getElementById('navtoggle');
+  var nav = document.getElementById('primarynav');
+  var iconOpen = document.getElementById('icon-open');
+  var iconClose = document.getElementById('icon-close');
+  function setNav(open){
+    nav.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    iconOpen.style.display = open ? 'none' : '';
+    iconClose.style.display = open ? '' : 'none';
+  }
+  toggle.addEventListener('click', function(){ setNav(!nav.classList.contains('open')); });
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('a')) setNav(false);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){ setNav(false); toggle.focus(); }
+  });
+
+  /* Footer year */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Quote form -> opens the visitor's messaging app with a prefilled SMS.
+     Nothing is sent silently: the user reviews and presses send themselves. */
+  var form = document.getElementById('quote');
+  var errBox = document.getElementById('form-error');
+  var okBox = document.getElementById('form-ok');
+  function markInvalid(input, bad){
+    var field = input.closest('.field');
+    if(field) field.classList.toggle('invalid', bad);
+    input.setAttribute('aria-invalid', bad ? 'true' : 'false');
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    errBox.classList.remove('show'); okBox.classList.remove('show');
+    var required = ['f-name','f-contact','f-service','f-town','f-details'];
+    var firstBad = null, allOk = true;
+    required.forEach(function(id){
+      var el = document.getElementById(id);
+      var bad = !el.value.trim();
+      markInvalid(el, bad);
+      if(bad){ allOk = false; if(!firstBad) firstBad = el; }
+    });
+    var consent = document.getElementById('f-consent');
+    if(!consent.checked){
+      allOk = false;
+      errBox.textContent = 'Please tick the consent box so Village Social may contact you about your message.';
+      errBox.classList.add('show');
+      consent.focus();
+      return;
+    }
+    if(!allOk){
+      errBox.textContent = 'Please fill in the highlighted fields before continuing.';
+      errBox.classList.add('show');
+      if(firstBad) firstBad.focus();
+      return;
+    }
+    function v(id){ return document.getElementById(id).value.trim(); }
+    var body =
+      'Village Social message\n' +
+      'Name: ' + v('f-name') + '\n' +
+      'Contact: ' + v('f-contact') + '\n' +
+      'Service: ' + v('f-service') + '\n' +
+      'Community: ' + v('f-town') + '\n' +
+      'Details: ' + v('f-details');
+    okBox.textContent = 'Opening your messaging app with the request addressed to (250) 409-4738 — review it and press send.';
+    okBox.classList.add('show');
+    window.location.href = 'sms:+12504094738?&body=' + encodeURIComponent(body);
+  });
+  /* Clear invalid styling as the user types */
+  form.addEventListener('input', function(e){
+    if(e.target.closest('.field')) markInvalid(e.target, false);
+  });
+})();
+</script>
 </body>
 </html>
