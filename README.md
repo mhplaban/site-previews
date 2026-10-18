@@ -1,0 +1,1 @@
+# Site previews — Unofficial website concept mockups prepared by Hasan (Radium Hot Springs) for local business outreach. These are design concepts only, not affiliated with or endorsed by the businesses named. Not indexed by search engines.
