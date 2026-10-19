@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  ============================================================
+  SITE CONFIG — Rocky Mountain Electric (concept preview v2)
+  To reuse this page for another business, change ONLY the
+  values below, then find/replace them through the page.
+  ------------------------------------------------------------
+  BUSINESS_NAME .... Rocky Mountain Electric
+  TAGLINE .......... Electrician
+  TOWN ............. Cranbrook, BC
+  PHONE_DISPLAY .... +1 250-581-4050
+  PHONE_TEL ........ +12505814050
+  HOURS ............ Daily 8:00 AM-4:00 PM
+  SERVICE_AREA ..... Cranbrook, BC
+  MAPS_URL ......... https://www.google.com/maps/place/?q=place_id:1020074436828172
+  PREVIEW_URL ...... https://mhplaban.github.io/site-previews/rocky-mountain-electric/
+  ACCENT ........... #7a2e1d (change in :root --accent)
+  ============================================================
+  OWNER-CONFIRMED FACTS (verified Oct 2026): name, phone,
+  address 2605 4 St S Cranbrook, posted daily 8-4 hours,
+  Electrician category on Google Maps. Verified as the Cranbrook,
+  BC trades business - distinct from same-name businesses in
+  Colorado and Idaho.
+  NOT verified — do not publish as fact: published service list
+  (residential/commercial/industrial), years in business and team,
+  licensing details, service-area towns beyond Cranbrook,
+  emergency availability, any review material.
+  ============================================================
+-->
+<title>Rocky Mountain Electric | Electrician in Cranbrook, BC</title>
+<meta name="description" content="Rocky Mountain Electric — electrical services in Cranbrook, BC. Call +1 250-581-4050. Posted hours: open daily, 8 AM–4 PM.">
+<link rel="canonical" href="https://mhplaban.github.io/site-previews/rocky-mountain-electric/">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rocky Mountain Electric | Electrician in Cranbrook, BC">
+<meta property="og:description" content="Electrical services in Cranbrook, BC. Call +1 250-581-4050. Open daily, 8 AM–4 PM.">
+<meta property="og:url" content="https://mhplaban.github.io/site-previews/rocky-mountain-electric/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%237a2e1d'/%3E%3Cpath d='M13 3 5 14h5l-1 7 8-11h-5z' fill='%23f5d76e'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Rocky Mountain Electric",
+  "telephone": "+1-250-581-4050",
+  "url": "https://mhplaban.github.io/site-previews/rocky-mountain-electric/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2605 4 St S",
+    "addressLocality": "Cranbrook",
+    "addressRegion": "BC",
+    "postalCode": "V1C 5C5"
+  },
+  "areaServed": { "@type": "Place", "name": "Cranbrook, British Columbia" },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "08:00", "closes": "16:00"
+  }]
+}
+</script>
+<style>
+  :root{
+    --ink:#1a2230; --ink-soft:#232a35; --paper:#f5f6f8; --card:#ffffff;
+    --line:#e2e7ee; --muted:#5d6b7d; --accent:#7a2e1d; --accent-dark:#5c2113;
+    --radius:14px; --max:1060px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink-soft);background:var(--paper);line-height:1.6;-webkit-text-size-adjust:100%}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#f5d76e;
+    padding:10px 18px;font-weight:700;z-index:100;border-radius:0 0 8px 0}
+  .skip:focus{left:0}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(26,34,48,.98)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;max-width:var(--max);margin:0 auto}
+  .brand{color:#fff;font-weight:800;font-size:1.1rem;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:10px}
+  .brand svg{flex-shrink:0}
+  .brand small{display:block;font-weight:400;font-size:.72rem;color:#9aa7b8}
+  nav.main ul{display:flex;gap:4px;list-style:none;align-items:center}
+  nav.main a.navlink{color:#dbe3ee;text-decoration:none;font-size:.95rem;font-weight:600;padding:10px 14px;border-radius:8px}
+  nav.main a.navlink:hover{background:rgba(255,255,255,.08);color:#fff}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#f5d76e;
+    text-decoration:none;padding:13px 28px;border-radius:10px;font-weight:800;font-size:1.02rem;border:0;cursor:pointer}
+  .btn:hover{filter:brightness(1.15)}
+  .btn-sm{padding:10px 20px;font-size:.92rem;border-radius:8px}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#0f1622}
+  .btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1.5px solid #9aa7b8;color:#dbe3ee;
+    text-decoration:none;padding:12px 26px;border-radius:10px;font-weight:600;background:transparent}
+  .btn-ghost:hover{border-color:#fff;color:#fff}
+  .navtoggle{display:none;background:none;border:0;color:#fff;padding:10px;cursor:pointer;border-radius:8px}
+  /* ---------- hero ---------- */
+  .hero{background:var(--ink);color:#fff;padding:64px 0 56px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:#e0a98e;font-weight:700;margin-bottom:14px}
+  h1{font-size:2.6rem;line-height:1.15;margin-bottom:16px;letter-spacing:-.01em}
+  .lede{color:#b9c4d4;font-size:1.1rem;margin-bottom:28px;max-width:34rem}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;list-style:none}
+  .chips li{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:#e0a98e;
+    border:1.5px solid rgba(122,46,29,.65);background:rgba(122,46,29,.2);padding:8px 16px;border-radius:999px}
+  .chips svg{flex-shrink:0}
+  .hero-art{background:linear-gradient(135deg,#3a241d 0%,#141c2b 100%);border:1px solid rgba(255,255,255,.09);
+    border-radius:20px;padding:40px 32px;text-align:center}
+  .hero-art svg{width:96px;height:96px;margin-bottom:18px}
+  .hero-art h2{color:#fff;font-size:1.25rem;margin-bottom:8px}
+  .hero-art p{color:#9aa7b8;font-size:.92rem;max-width:22rem;margin:0 auto 20px}
+  .hero-art .cap{font-size:.75rem;color:#6b7a8f;margin-top:16px}
+  /* ---------- sections ---------- */
+  section.block{padding:64px 0}
+  section.block.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:var(--accent-dark);font-weight:700;margin-bottom:10px}
+  h2.sec{font-size:1.9rem;color:var(--ink);margin-bottom:10px;letter-spacing:-.01em}
+  .sec-sub{color:var(--muted);margin-bottom:32px;max-width:40rem;font-size:1.02rem}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  .card .ic{width:46px;height:46px;border-radius:12px;background:rgba(122,46,29,.12);display:flex;
+    align-items:center;justify-content:center;margin-bottom:16px;color:var(--accent-dark)}
+  .card h3{font-size:1.12rem;margin-bottom:8px;color:var(--ink)}
+  .card p{font-size:.95rem;color:var(--muted)}
+  .owner-note{margin-top:20px;font-size:.88rem;color:var(--muted);background:#fffbe8;border:1px dashed #d9c45a;
+    border-radius:10px;padding:14px 18px}
+  section.block.alt .owner-note{background:#fffbe8}
+  /* trust list */
+  .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none}
+  .trust li{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:18px 20px}
+  .trust svg{flex-shrink:0;margin-top:3px;color:#1d7a3a}
+  .trust strong{display:block;color:var(--ink);font-size:.98rem}
+  .trust span{font-size:.88rem;color:var(--muted)}
+  /* gallery placeholder */
+  .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .ph{aspect-ratio:4/3;border:2px dashed #c3ccd8;border-radius:var(--radius);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:8px;color:#8a99a8;background:#eef1f5;text-align:center;padding:16px}
+  .ph strong{font-size:.9rem;color:#6b7a8f}
+  .ph span{font-size:.78rem}
+  .checklist{margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 28px}
+  .checklist h3{font-size:1.05rem;color:var(--ink);margin-bottom:12px}
+  .checklist ul{list-style:none;display:grid;gap:8px;font-size:.93rem;color:var(--muted)}
+  .checklist li{display:flex;gap:10px;align-items:flex-start}
+  .checklist svg{flex-shrink:0;margin-top:4px;color:var(--accent-dark)}
+  /* reviews */
+  .review-cta{background:var(--ink);color:#fff;border-radius:18px;padding:44px 32px;text-align:center}
+  .review-cta h2{color:#fff;margin-bottom:10px}
+  .review-cta p{color:#b9c4d4;margin-bottom:24px;max-width:34rem;margin-left:auto;margin-right:auto}
+  /* service area / about */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .hours{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .hours table{width:100%;border-collapse:collapse;font-size:.95rem}
+  .hours td{padding:10px 0;border-bottom:1px solid #eef1f5}
+  .hours tr:last-child td{border-bottom:none}
+  .hours td:last-child{text-align:right;font-weight:600;color:var(--ink)}
+  .addr{margin-top:18px;color:var(--muted);font-size:.95rem}
+  .addr a{color:var(--accent-dark);font-weight:600}
+  /* contact + form */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+  .bigphone{display:block;font-size:1.9rem;font-weight:800;color:var(--ink);text-decoration:none;margin:6px 0 18px}
+  .bigphone:hover{color:var(--accent-dark)}
+  form.quote{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+  form.quote h3{font-size:1.3rem;color:var(--ink);margin-bottom:6px}
+  form.quote .form-sub{font-size:.9rem;color:var(--muted);margin-bottom:22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-weight:600;font-size:.9rem;color:var(--ink);margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border:1.5px solid #c9d2de;
+    border-radius:10px;background:#fff;color:var(--ink)}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent-dark);outline:3px solid rgba(122,46,29,.3);outline-offset:1px}
+  .field .hint{font-size:.8rem;color:var(--muted);margin-top:4px}
+  .field .err{font-size:.82rem;color:#b3261e;margin-top:4px;display:none}
+  .field.invalid .err{display:block}
+  .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#b3261e}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;color:var(--muted);margin:4px 0 20px}
+  .consent input{margin-top:4px;flex-shrink:0;width:18px;height:18px}
+  .form-note{font-size:.84rem;color:var(--muted);margin-top:14px;background:#f0f4f8;border-radius:10px;padding:12px 16px}
+  .alert{display:none;border-radius:10px;padding:14px 18px;margin-bottom:18px;font-size:.92rem;font-weight:600}
+  .alert.show{display:block}
+  .alert.error{background:#fdecea;color:#b3261e;border:1px solid #f5c6c0}
+  .alert.ok{background:#e6f4ea;color:#1d7a3a;border:1px solid #bfe3c9}
+  /* final band + footer */
+  .band{background:var(--accent);color:#f5d76e;text-align:center;padding:56px 20px;border-radius:20px;margin:8px 0 64px}
+  .band h2{font-size:1.9rem;margin-bottom:10px}
+  .band p{margin-bottom:24px;font-weight:600}
+  footer.site{background:var(--ink);color:#9aa7b8;padding:48px 0 40px;font-size:.9rem}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;margin-bottom:32px}
+  footer.site h3{color:#fff;font-size:1rem;margin-bottom:12px}
+  footer.site a{color:#dbe3ee;text-decoration:none}
+  footer.site a:hover{text-decoration:underline}
+  footer.site ul{list-style:none;display:grid;gap:8px}
+  .fine{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:.8rem;color:#6b7a8f;display:grid;gap:8px}
+  .preview-tag{display:inline-block;background:rgba(245,197,24,.14);border:1px solid rgba(245,197,24,.5);
+    color:#f5d76e;font-size:.78rem;font-weight:600;border-radius:8px;padding:10px 16px}
+  /* mobile call bar */
+  .mobilebar{display:none}
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-art{order:-1;padding:28px 20px}
+    .grid3{grid-template-columns:1fr 1fr}
+    .split,.contact-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    h1{font-size:2rem}
+    section.block{padding:48px 0}
+    .grid3,.grid2,.trust,.ph-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ink);
+      border-top:1px solid rgba(255,255,255,.1);padding:8px 16px 16px}
+    nav.main.open{display:block}
+    nav.main ul{flex-direction:column;align-items:stretch}
+    nav.main a.navlink{display:block;padding:12px 8px}
+    nav.main .btn{margin-top:8px;width:100%}
+    .navtoggle{display:block}
+    header.site{position:sticky}
+    .bar{position:relative}
+    .mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--ink);
+      padding:12px 16px;z-index:60;gap:10px}
+    .mobilebar a{flex:1;text-align:center;background:var(--accent);color:#f5d76e;text-decoration:none;
+      padding:14px;border-radius:12px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px}
+    footer.site{padding-bottom:110px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="Rocky Mountain Electric — home">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#7a2e1d"/><path d="M13 3 5 14h5l-1 7 8-11h-5z" fill="#f5d76e"/></svg>
+      <span>Rocky Mountain Electric<small>Electrician · Cranbrook, BC</small></span>
+    </a>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="primarynav" aria-label="Open menu">
+      <svg id="icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <nav class="main" id="primarynav" aria-label="Primary">
+      <ul>
+        <li><a class="navlink" href="#services">Services</a></li>
+        <li><a class="navlink" href="#why">Why Us</a></li>
+        <li><a class="navlink" href="#reviews">Reviews</a></li>
+        <li><a class="navlink" href="#area">Service Area</a></li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
+        <li><a class="btn btn-sm" href="tel:+12505814050">Call Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Electrician · Cranbrook, BC</p>
+      <h1>Rocky Mountain Electric - Electrician in Cranbrook, BC</h1>
+      <p class="lede">Electrical services in Cranbrook. Call for a quote.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12505814050">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+          Call +1 250-581-4050</a>
+        <a class="btn-ghost" href="#quote">Request a Quote</a>
+      </div>
+      <ul class="chips" aria-label="Key facts">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Cranbrook, BC</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Open daily · 8 AM – 4 PM</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Call for a quote</li>
+      </ul>
+    </div>
+    <div class="hero-art" role="img" aria-label="Illustrative graphic: electrical services in Cranbrook, BC">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#7a2e1d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/></svg>
+      <h2>Electrical services in Cranbrook.</h2>
+      <p>Call for a quote. Real photos and a full service list go here once the owner confirms them.</p>
+      <a class="btn btn-sm" href="#services">See Services</a>
+      <p class="cap">Illustrative graphic — replaced with real project photos at launch.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+<!-- ================= SERVICES ================= -->
+<section class="block" id="services" aria-labelledby="services-h">
+  <p class="kicker">What we do</p>
+  <h2 class="sec" id="services-h">Electrical services</h2>
+  <p class="sec-sub">Rocky Mountain Electric is listed on Google Maps under the Electrician category in Cranbrook. Call and describe your job to get a straight answer.</p>
+  <div class="grid3">
+    <div class="card">
+      <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/></svg></div>
+      <h3>Electrical services</h3>
+      <p>Listed on Google Maps under the Electrician category — a full published service list is confirmed with the owner before launch.</p>
+    </div>
+  </div>
+  <p class="owner-note"><strong>Owner to confirm:</strong> the published service list (residential, commercial, industrial), years in business and team, service-area towns beyond Cranbrook, emergency availability and any review material. Only verified services are listed here — this section grows once the owner confirms the details.</p>
+</section>
+
+<!-- ================= WHY / TRUST ================= -->
+<section class="block alt" id="why" aria-labelledby="why-h">
+  <p class="kicker">Why Rocky Mountain Electric</p>
+  <h2 class="sec" id="why-h">A Cranbrook electrician you can reach</h2>
+  <p class="sec-sub">Everything below is verified from Rocky Mountain Electric's public business listing. Nothing is exaggerated — and nothing is invented.</p>
+  <ul class="trust">
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><strong>Cranbrook business</strong><span>Listed at 2605 4 St S, Cranbrook on Google Maps.</span></div>
+    </li>
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div><strong>Daily hours</strong><span>Posted hours: open daily 8 AM to 4 PM.</span></div>
+    </li>
+    <li>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div><strong>Not the US namesakes</strong><span>Verified as the Cranbrook, BC listing by address and phone — distinct from same-name businesses in Colorado and Idaho.</span></div>
+    </li>
+  </ul>
+  <p class="owner-note"><strong>Owner to confirm before launch:</strong> the published service list, years in business and team, service-area towns beyond Cranbrook, emergency availability and any review material. These appear here only after the owner verifies them — they are never invented.</p>
+</section>
+
+<!-- ================= PROJECT GALLERY (placeholder) ================= -->
+<section class="block" id="projects" aria-labelledby="projects-h">
+  <p class="kicker">Recent work</p>
+  <h2 class="sec" id="projects-h">Project gallery</h2>
+  <p class="sec-sub">Real project photos go here once the owner provides them. Nothing shown is a stock photo pretending to be Rocky Mountain Electric's work.</p>
+  <div class="ph-grid" aria-label="Project photo placeholders">
+    <div class="ph"><strong>Project photo 1</strong><span>Owner to provide</span></div>
+    <div class="ph"><strong>Project photo 2</strong><span>Owner to provide</span></div>
+    <div class="ph"><strong>Project photo 3</strong><span>Owner to provide</span></div>
+  </div>
+  <div class="checklist">
+    <h3>Owner content checklist — project photos</h3>
+    <ul>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>3–6 photos of real completed jobs (phone photos are fine)</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>One-line caption per photo: what was done + community</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Permission confirmed for any photo showing a customer's property</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="block alt" id="reviews" aria-labelledby="reviews-h">
+  <p class="kicker">Reviews</p>
+  <h2 class="sec" id="reviews-h">What customers say</h2>
+  <p class="sec-sub">Testimonials appear here only with the owner's approval — never invented, never copied without permission.</p>
+  <div class="review-cta">
+    <h2>See Rocky Mountain Electric's reviews</h2>
+    <p>Customer reviews live on Rocky Mountain Electric's public Google listing — real ratings from real customers, unedited.</p>
+    <a class="btn" href="https://www.google.com/maps/place/?q=place_id:1020074436828172" target="_blank" rel="noopener">View Google Reviews</a>
+  </div>
+</section>
+
+<!-- ================= SERVICE AREA + ABOUT ================= -->
+<section class="block" id="area" aria-labelledby="area-h">
+  <div class="split">
+    <div>
+      <p class="kicker">Where we work</p>
+      <h2 class="sec" id="area-h">Service area</h2>
+      <p class="sec-sub">Rocky Mountain Electric serves <strong>Cranbrook, British Columbia</strong>.</p>
+      <p><a class="btn btn-dark" href="https://www.google.com/maps/place/?q=place_id:1020074436828172" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Get Directions</a></p>
+      <p class="owner-note"><strong>Owner to confirm:</strong> the full list of communities served (e.g. Kimberley, Fernie) is added here only after the owner confirms it.</p>
+    </div>
+    <div>
+      <p class="kicker">About</p>
+      <h2 class="sec">About Rocky Mountain Electric</h2>
+      <p class="sec-sub">Rocky Mountain Electric is an electrician listed in Cranbrook, BC, at 2605 4 St S, with posted daily hours and a published phone number. This is the Cranbrook, BC trades business — not the same-name companies in Colorado or Idaho — and no standalone website was found.</p>
+      <div class="hours" aria-label="Business hours">
+        <table>
+          <tr><td>Monday - Sunday</td><td>8:00 AM - 4:00 PM</td></tr>
+        </table>
+      </div>
+      <p class="addr"><strong>2605 4 St S, Cranbrook, BC V1C 5C5</strong> · <a href="tel:+12505814050">+1 250-581-4050</a></p>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="wrap">
+<!-- ================= CONTACT + QUOTE FORM ================= -->
+<section class="block alt" id="contact" aria-labelledby="contact-h">
+  <p class="kicker">Get in touch</p>
+  <h2 class="sec" id="contact-h">Contact &amp; quote request</h2>
+  <p class="sec-sub">The fastest way to reach Rocky Mountain Electric is a phone call. Prefer writing? Send a quote request below.</p>
+  <div class="contact-grid">
+    <div>
+      <p><strong>Call Rocky Mountain Electric</strong></p>
+      <a class="bigphone" href="tel:+12505814050">+1 250-581-4050</a>
+      <div class="hours" aria-label="Business hours">
+        <table>
+          <tr><td>Monday - Sunday</td><td>8:00 AM - 4:00 PM</td></tr>
+        </table>
+      </div>
+      <p class="addr"><strong>2605 4 St S, Cranbrook, BC V1C 5C5</strong><br>
+      <a href="https://www.google.com/maps/place/?q=place_id:1020074436828172" target="_blank" rel="noopener">Find us on Google Maps</a></p>
+    </div>
+    <form class="quote" id="quote" novalidate aria-labelledby="quote-h">
+      <h3 id="quote-h">Request a quote</h3>
+      <p class="form-sub">Fill this in and your messaging app will open with the request addressed to Rocky Mountain Electric — you press send. Nothing is submitted silently.</p>
+      <div class="alert error" id="form-error" role="alert"></div>
+      <div class="alert ok" id="form-ok" role="status"></div>
+      <div class="field" data-field="name">
+        <label for="f-name">Your name</label>
+        <input type="text" id="f-name" name="name" autocomplete="name" required>
+        <p class="err">Please enter your name.</p>
+      </div>
+      <div class="field" data-field="contact">
+        <label for="f-contact">Phone number or email</label>
+        <input type="text" id="f-contact" name="contact" autocomplete="tel" required
+               aria-describedby="contact-hint">
+        <p class="hint" id="contact-hint">So Rocky Mountain Electric can reach you back.</p>
+        <p class="err">Please enter a phone number or email.</p>
+      </div>
+      <div class="grid2">
+        <div class="field" data-field="service">
+          <label for="f-service">Type of service</label>
+          <select id="f-service" name="service" required>
+            <option value="">Choose…</option>
+            <option>Installation / new work</option>
+            <option>Repair / troubleshooting</option>
+            <option>Quote for a project</option>
+            <option>Something else</option>
+          </select>
+          <p class="err">Please choose a service type.</p>
+        </div>
+        <div class="field" data-field="town">
+          <label for="f-town">Community</label>
+          <input type="text" id="f-town" name="town" placeholder="e.g. Cranbrook" autocomplete="address-level2" required>
+          <p class="err">Please enter your community.</p>
+        </div>
+      </div>
+      <div class="field" data-field="details">
+        <label for="f-details">Describe the job</label>
+        <textarea id="f-details" name="details" rows="4" required
+                  placeholder="e.g. A few outlets stopped working in the kitchen…"></textarea>
+        <p class="err">Please describe the job briefly.</p>
+      </div>
+      <div class="consent">
+        <input type="checkbox" id="f-consent" required>
+        <label for="f-consent">I agree to be contacted about my quote request.</label>
+      </div>
+      <button class="btn" type="submit" style="width:100%">Open in My Messaging App</button>
+      <p class="form-note">No account, no tracking, no silent sending: this opens your phone's messaging app with the request written out to <strong>+1 250-581-4050</strong>. You review it and press send yourself. Prefer to talk? <a href="tel:+12505814050">Call or text instead</a>.</p>
+      <noscript><p class="form-note">JavaScript is off, so the form can't open your messaging app. Please call <a href="tel:+12505814050">+1 250-581-4050</a> instead.</p></noscript>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<div class="band">
+  <h2>Need an electrician?</h2>
+  <p>One call is all it takes — open daily, 8 AM to 4 PM.</p>
+  <a class="btn btn-dark" href="tel:+12505814050">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+    Call +1 250-581-4050</a>
+</div>
+</div>
+</main>
+
+<div class="mobilebar" aria-label="Quick call">
+  <a href="tel:+12505814050">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+    Call Rocky Mountain Electric</a>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Rocky Mountain Electric</h3>
+        <ul>
+          <li>Electrician</li>
+          <li>Cranbrook, BC</li>
+          <li><a href="tel:+12505814050">+1 250-581-4050</a></li>
+          <li>Daily · 8:00 AM – 4:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#area">Service Area</a></li>
+          <li><a href="#quote">Request a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Find us</h3>
+        <ul>
+          <li><a href="https://www.google.com/maps/place/?q=place_id:1020074436828172" target="_blank" rel="noopener">Google Maps listing</a></li>
+          <li><a href="https://www.google.com/maps/place/?q=place_id:1020074436828172" target="_blank" rel="noopener">Get directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- PREVIEW DISCLAIMER — remove this block when the owner approves the production site -->
+    <div class="fine">
+      <p><span class="preview-tag">Unofficial concept preview</span></p>
+      <p>Design mockup prepared by Hasan, Radium Hot Springs — not affiliated with or endorsed by Rocky Mountain Electric. Details shown as listed publicly; final content confirmed with the owner before launch. Quote requests open your own messaging app; nothing is sent or stored by this page.</p>
+      <p>© <span id="yr">2026</span> Rocky Mountain Electric concept. All rights reserved.</p>
+    </div>
+    <!-- END PREVIEW DISCLAIMER -->
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* Mobile nav */
+  var toggle = document.getElementById('navtoggle');
+  var nav = document.getElementById('primarynav');
+  var iconOpen = document.getElementById('icon-open');
+  var iconClose = document.getElementById('icon-close');
+  function setNav(open){
+    nav.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    iconOpen.style.display = open ? 'none' : '';
+    iconClose.style.display = open ? '' : 'none';
+  }
+  toggle.addEventListener('click', function(){ setNav(!nav.classList.contains('open')); });
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('a')) setNav(false);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){ setNav(false); toggle.focus(); }
+  });
+
+  /* Footer year */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Quote form -> opens the visitor's messaging app with a prefilled SMS.
+     Nothing is sent silently: the user reviews and presses send themselves. */
+  var form = document.getElementById('quote');
+  var errBox = document.getElementById('form-error');
+  var okBox = document.getElementById('form-ok');
+  function markInvalid(input, bad){
+    var field = input.closest('.field');
+    if(field) field.classList.toggle('invalid', bad);
+    input.setAttribute('aria-invalid', bad ? 'true' : 'false');
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    errBox.classList.remove('show'); okBox.classList.remove('show');
+    var required = ['f-name','f-contact','f-service','f-town','f-details'];
+    var firstBad = null, allOk = true;
+    required.forEach(function(id){
+      var el = document.getElementById(id);
+      var bad = !el.value.trim();
+      markInvalid(el, bad);
+      if(bad){ allOk = false; if(!firstBad) firstBad = el; }
+    });
+    var consent = document.getElementById('f-consent');
+    if(!consent.checked){
+      allOk = false;
+      errBox.textContent = 'Please tick the consent box so Rocky Mountain Electric may contact you about your quote request.';
+      errBox.classList.add('show');
+      consent.focus();
+      return;
+    }
+    if(!allOk){
+      errBox.textContent = 'Please fill in the highlighted fields before continuing.';
+      errBox.classList.add('show');
+      if(firstBad) firstBad.focus();
+      return;
+    }
+    function v(id){ return document.getElementById(id).value.trim(); }
+    var body =
+      'Rocky Mountain Electric quote request\n' +
+      'Name: ' + v('f-name') + '\n' +
+      'Contact: ' + v('f-contact') + '\n' +
+      'Service: ' + v('f-service') + '\n' +
+      'Community: ' + v('f-town') + '\n' +
+      'Details: ' + v('f-details');
+    okBox.textContent = 'Opening your messaging app with the request addressed to +1 250-581-4050 — review it and press send.';
+    okBox.classList.add('show');
+    window.location.href = 'sms:+12505814050?&body=' + encodeURIComponent(body);
+  });
+  /* Clear invalid styling as the user types */
+  form.addEventListener('input', function(e){
+    if(e.target.closest('.field')) markInvalid(e.target, false);
+  });
+})();
+</script>
+</body>
+</html>
