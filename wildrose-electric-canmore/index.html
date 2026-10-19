@@ -494,7 +494,43 @@
     var field = input.closest('.field');
     if(field) field.classList.toggle('invalid', bad);
     input.setAttribute('aria-invalid', bad ? 'true' : 'false');
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    errBox.classList.remove('show'); okBox.classList.remove('show');
+    var required = ['f-name','f-contact','f-service','f-town','f-details'];
+    var firstBad = null, allOk = true;
+    required.forEach(function(id){
+      var el = document.getElementById(id);
+      var bad = !el.value.trim();
+      markInvalid(el, bad);
+      if(bad){ allOk = false; if(!firstBad) firstBad = el; }
+    });
+    var consent = document.getElementById('f-consent');
+    if(!consent.checked){
+      allOk = false;
+      errBox.textContent = 'Please tick the consent box so Wildrose Electric may contact you about your request.';
+      errBox.classList.add('show');
+      consent.focus();
+      return;
     }
+    if(!allOk){
+      errBox.textContent = 'Please fill in the highlighted fields before continuing.';
+      errBox.classList.add('show');
+      if(firstBad) firstBad.focus();
+      return;
+    }
+    function v(id){ return document.getElementById(id).value.trim(); }
+    var body =
+      'Wildrose Electric request\n' +
+      'Name: ' + v('f-name') + '\n' +
+      'Contact: ' + v('f-contact') + '\n' +
+      'Service: ' + v('f-service') + '\n' +
+      'Community: ' + v('f-town') + '\n' +
+      'Details: ' + v('f-details');
+    okBox.textContent = 'Opening your messaging app with the request addressed to (403) 678-1478 — review it and press send.';
+    okBox.classList.add('show');
+    window.location.href = 'sms:+14036781478?&body=' + encodeURIComponent(body);
   });
   form.addEventListener('input', function(e){
     if(e.target.closest('.field')) markInvalid(e.target, false);
