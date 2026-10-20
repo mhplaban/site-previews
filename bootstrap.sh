@@ -30,35 +30,33 @@ systemctl enable --now mariadb
 PHPV=$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')
 systemctl enable --now php${PHPV}-fpm
 
-# 6. Webroot + placeholder for brainiacbiz.com
+# 6. WordPress for brainiacbiz.com (Hasan's call 2026-10-20)
+# Database + user with a generated password that never leaves this server.
+DBNAME=brainiacbiz_wp
+DBUSER=brainiacbiz
+DBPASS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 28)
+mysql -e "CREATE DATABASE IF NOT EXISTS ${DBNAME} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -e "CREATE USER IF NOT EXISTS '${DBUSER}'@'localhost' IDENTIFIED BY '${DBPASS}';"
+mysql -e "GRANT ALL PRIVILEGES ON ${DBNAME}.* TO '${DBUSER}'@'localhost'; FLUSH PRIVILEGES;"
+
+# WP-CLI
+if [ ! -x /usr/local/bin/wp ]; then
+  curl -fsSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o /usr/local/bin/wp
+  chmod +x /usr/local/bin/wp
+fi
+
+# Core files
 mkdir -p /var/www/brainiacbiz.com
-cat > /var/www/brainiacbiz.com/index.html <<'HTML'
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brainiac Biz - Websites and Google Business Profile Optimization</title>
-<meta name="description" content="Brainiac Biz builds affordable one-page websites and optimizes Google Business Profiles for local businesses in the Columbia Valley and beyond.">
-<style>
-body{font-family:system-ui,Arial,sans-serif;margin:0;background:#0f172a;color:#e2e8f0;display:flex;min-height:100vh;align-items:center;justify-content:center}
-main{max-width:640px;padding:32px;text-align:center}
-h1{font-size:2rem;margin:0 0 12px}
-p{line-height:1.6;color:#94a3b8}
-.badge{display:inline-block;border:1px solid #334155;border-radius:999px;padding:4px 12px;font-size:.85rem;color:#cbd5e1;margin-bottom:16px}
-</style>
-</head>
-<body>
-<main>
-<div class="badge">Brainiac Biz</div>
-<h1>Websites and Google Business Profile optimization for local businesses.</h1>
-<p>Our full site is on its way. We build modern, mobile-friendly one-page websites and help local businesses get found on Google.</p>
-<p>Based in Radium Hot Springs, BC. Serving the Columbia Valley and beyond.</p>
-</main>
-</body>
-</html>
-HTML
+cd /var/www/brainiacbiz.com
+if [ ! -f wp-config.php ]; then
+  sudo -u www-data /usr/local/bin/wp core download --path=/var/www/brainiacbiz.com --force
+  sudo -u www-data /usr/local/bin/wp config create --path=/var/www/brainiacbiz.com --dbname="${DBNAME}" --dbuser="${DBUSER}" --dbpass="${DBPASS}" --dbhost=localhost
+fi
 chown -R www-data:www-data /var/www/brainiacbiz.com
+find /var/www/brainiacbiz.com -type d -exec chmod 755 {} \;
+find /var/www/brainiacbiz.com -type f -exec chmod 644 {} \;
+# WordPress core install (admin user/password) is completed afterwards
+# through the web install wizard so Hasan sets his own admin credentials.
 
 # 7. nginx vhost
 PHPV=$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')
@@ -69,7 +67,7 @@ server {
     server_name brainiacbiz.com www.brainiacbiz.com;
     root /var/www/brainiacbiz.com;
     index index.html index.php;
-    location / { try_files \$uri \$uri/ =404; }
+    location / { try_files \$uri \$uri/ /index.php?\$args; }
     location ~ \.php\$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/run/php/php${PHPV}-fpm.sock;
